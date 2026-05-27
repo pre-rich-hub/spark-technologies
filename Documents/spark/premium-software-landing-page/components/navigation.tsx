@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import {
   Menu, X, ChevronDown,
   Layers, Brain, Building2, Cloud, Code2, Smartphone,
-  FolderOpen, BarChart3, Globe, Grid3x3,
   ArrowUpRight,
 } from "lucide-react"
 import Link from "next/link"
@@ -51,18 +50,7 @@ const navLinks: NavLink[] = [
       cta: { label: "View all services", href: "/services" },
     },
   },
-  {
-    name: "Work",
-    href: "/work",
-    dropdown: {
-      items: [
-        { name: "Case Studies",   href: "/work",             description: "Deep dives into our flagship projects", icon: FolderOpen },
-        { name: "By Industry",    href: "/work/industries",  description: "Healthcare, Fintech, EdTech & more",    icon: Globe },
-        { name: "Results",        href: "/work/results",     description: "Metrics and outcomes that matter",       icon: BarChart3 },
-        { name: "All Projects",   href: "/work/all",         description: "Browse our full portfolio of work",      icon: Grid3x3 },
-      ],
-    },
-  },
+  { name: "Work", href: "/work" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ]
