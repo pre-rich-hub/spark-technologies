@@ -2,28 +2,10 @@
 
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
-import { Brain, Building2, Cloud, Code2, Globe, TabletSmartphone, ArrowUpRight } from "lucide-react"
+import { Code2, Globe, TabletSmartphone, ArrowUpRight } from "lucide-react"
 import Link from "next/link"
 
 const services = [
-  {
-    icon: Brain,
-    title: "AI Platforms",
-    description: "Production-grade AI systems — LLM integrations, RAG pipelines, and custom ML models — engineered to deliver measurable outcomes at scale.",
-    href: "/services/ai-platforms",
-  },
-  {
-    icon: Building2,
-    title: "Enterprise Applications",
-    description: "Complex enterprise systems engineered for real-world load, regulatory requirements, and organisational scale.",
-    href: "/services/enterprise-applications",
-  },
-  {
-    icon: Cloud,
-    title: "Cloud Infrastructure",
-    description: "Modern cloud architecture optimised for performance, cost-efficiency, and resilience across AWS, GCP, and Azure.",
-    href: "/services/cloud-infrastructure",
-  },
   {
     icon: Code2,
     title: "Custom Development",
@@ -73,7 +55,7 @@ export function ServicesPreview() {
             </h2>
             <div className="lg:text-right">
               <p className="text-muted-foreground text-sm leading-relaxed max-w-xs mb-5">
-                Six focused capabilities. Each one practised deeply, not spread thin.
+                Three focused capabilities. Each one practised deeply, not spread thin.
               </p>
               <Link
                 href="/services"
@@ -87,7 +69,7 @@ export function ServicesPreview() {
           <div className="mt-12 h-px bg-border" />
         </motion.div>
 
-        {/* Grid — 6 cards, clean 3×2 */}
+        {/* Grid — 3 cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-sm overflow-hidden">
           {services.map((service, index) => (
             <motion.div
@@ -100,11 +82,9 @@ export function ServicesPreview() {
                 href={service.href}
                 className="group relative flex flex-col bg-card/60 hover:bg-card/90 p-8 transition-colors duration-500 overflow-hidden h-full"
               >
-                {/* Ember hover wash */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-gradient-to-br from-ember/5 to-transparent" />
 
                 <div className="relative z-10 flex flex-col h-full">
-                  {/* Icon */}
                   <div className="w-12 h-12 rounded-sm border border-border flex items-center justify-center mb-7 group-hover:border-ember/40 transition-colors duration-500">
                     <service.icon className="w-5 h-5 text-muted-foreground group-hover:text-ember transition-colors duration-500" />
                   </div>
@@ -123,7 +103,6 @@ export function ServicesPreview() {
                   </div>
                 </div>
 
-                {/* Bottom accent line */}
                 <div className="absolute bottom-0 left-0 h-[1px] w-0 group-hover:w-full bg-ember transition-all duration-700 ease-out" />
               </Link>
             </motion.div>
