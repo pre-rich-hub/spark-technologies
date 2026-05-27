@@ -14,10 +14,9 @@ const footerLinks = {
     { name: "Mobile Development",    href: "/services/mobile-development"      },
   ],
   Company: [
-    { name: "About",    href: "/about"    },
-    { name: "Work",     href: "/work"     },
-    { name: "Insights", href: "/insights" },
-    { name: "Careers",  href: "/careers"  },
+    { name: "About",   href: "/about"   },
+    { name: "Work",    href: "/work"    },
+    { name: "Contact", href: "/contact" },
   ],
   Legal: [
     { name: "Privacy Policy",   href: "#" },

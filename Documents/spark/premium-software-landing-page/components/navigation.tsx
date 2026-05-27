@@ -7,8 +7,6 @@ import {
   Layers, Brain, Building2, Cloud, Code2, Smartphone,
   FolderOpen, BarChart3, Globe, Grid3x3,
   BookOpen, Users, Heart, Newspaper,
-  FileText, BookMarked, Calendar, Mail,
-  Briefcase, Cpu, Gift,
   ArrowUpRight,
 } from "lucide-react"
 import Link from "next/link"
@@ -75,29 +73,6 @@ const navLinks: NavLink[] = [
         { name: "The Team",      href: "/about/team",     description: "Meet the engineers and designers",      icon: Users },
         { name: "Culture",       href: "/about/culture",  description: "What drives us every day",              icon: Heart },
         { name: "Press & Media", href: "/about/press",    description: "Coverage and announcements",            icon: Newspaper },
-      ],
-    },
-  },
-  {
-    name: "Insights",
-    href: "/insights",
-    dropdown: {
-      items: [
-        { name: "Engineering Blog", href: "/insights",              description: "Technical deep-dives from our team",       icon: FileText },
-        { name: "Whitepapers",      href: "/insights/whitepapers",  description: "Research-backed industry reports",          icon: BookMarked },
-        { name: "Events & Talks",   href: "/insights/events",       description: "Conferences and workshops we attend",      icon: Calendar },
-        { name: "Newsletter",       href: "/insights/newsletter",   description: "Weekly digest from the Spark team",        icon: Mail },
-      ],
-    },
-  },
-  {
-    name: "Careers",
-    href: "/careers",
-    dropdown: {
-      items: [
-        { name: "Open Roles",          href: "/careers",           description: "Join our growing team",          icon: Briefcase },
-        { name: "Engineering Culture", href: "/careers/culture",   description: "How we work and ship",           icon: Cpu },
-        { name: "Benefits",            href: "/careers/benefits",  description: "What we offer our people",       icon: Gift },
       ],
     },
   },

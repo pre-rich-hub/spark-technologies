@@ -29,7 +29,7 @@ export default function ContactPage() {
   const [form, setForm] = useState({ name: "", email: "", company: "", budget: "", message: "" })
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
-  const inputClass = "w-full bg-card/50 border border-border focus:border-ember rounded-sm px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ember/15 transition-colors duration-300"
+  const inputClass = "w-full bg-input border border-border focus:border-ember rounded-sm px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ember/15 transition-colors duration-300"
 
   return (
     <main>
