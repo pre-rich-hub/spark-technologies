@@ -5,11 +5,6 @@ import { useRef, useState } from "react"
 import { ArrowRight, Mail, MapPin, Phone, ChevronDown } from "lucide-react"
 import { PageHero } from "@/components/shared/page-hero"
 
-const offices = [
-  { city: "San Francisco", address: "100 Innovation Drive, Suite 900", country: "United States", role: "Headquarters" },
-  { city: "London",        address: "One Canada Square, Canary Wharf",  country: "United Kingdom", role: "EMEA Hub"       },
-  { city: "Singapore",     address: "1 Raffles Quay, North Tower",      country: "Singapore",      role: "APAC Hub"       },
-]
 
 const faqs = [
   { q: "What is your typical project timeline?", a: "Typical projects range from 10 weeks (focused MVP) to 32 weeks (complex enterprise system). After a discovery call we provide a detailed timeline with milestones before any engagement begins." },
@@ -161,23 +156,6 @@ export default function ContactPage() {
                 </div>
               </div>
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Offices */}
-      <section className="py-16 border-t border-border" style={{ background: "var(--section-alt)" }}>
-        <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          <p className="text-[11px] uppercase tracking-[0.22em] text-ember font-medium mb-10">Global Offices</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-sm overflow-hidden">
-            {offices.map((office) => (
-              <div key={office.city} className="bg-card/60 p-8 hover:bg-card/90 transition-colors duration-300">
-                <span className="text-[10px] uppercase tracking-[0.16em] text-ember font-medium">{office.role}</span>
-                <h3 className="text-xl font-bold mt-2 mb-1">{office.city}</h3>
-                <p className="text-sm text-muted-foreground">{office.address}</p>
-                <p className="text-xs text-muted-foreground/60 mt-1">{office.country}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>

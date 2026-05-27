@@ -67,27 +67,17 @@ const delivery = [
   },
 ]
 
-const certifications = [
-  { label: "ISO 27001",    sub: "Information Security" },
-  { label: "SOC 2 Type II",sub: "Security & Availability" },
-  { label: "AWS Advanced", sub: "Technology Partner" },
-  { label: "Google Cloud", sub: "Premier Partner" },
-  { label: "HIPAA",        sub: "Compliant Practices" },
-  { label: "PCI DSS L1",   sub: "Service Provider" },
-]
 
 export default function AboutPage() {
   const missionRef  = useRef(null)
   const principlesRef = useRef(null)
   const valuesRef   = useRef(null)
   const deliveryRef = useRef(null)
-  const certRef     = useRef(null)
 
   const missionInView    = useInView(missionRef,    { once: true, margin: "-80px" })
   const principlesInView = useInView(principlesRef, { once: true, margin: "-80px" })
   const valuesInView     = useInView(valuesRef,     { once: true, margin: "-80px" })
   const deliveryInView   = useInView(deliveryRef,   { once: true, margin: "-80px" })
-  const certInView       = useInView(certRef,       { once: true, margin: "-80px" })
 
   return (
     <main>
@@ -263,40 +253,6 @@ export default function AboutPage() {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Certifications */}
-      <section
-        className="py-16 border-t border-border"
-        style={{ background: "var(--section-alt)" }}
-        ref={certRef}
-      >
-        <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={certInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8 }}
-          >
-            <p className="text-[11px] uppercase tracking-[0.22em] text-ember font-medium mb-10 text-center">
-              Certifications & Partnerships
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              {certifications.map((cert, i) => (
-                <motion.div
-                  key={cert.label}
-                  initial={{ opacity: 0, scale: 0.92 }}
-                  animate={certInView ? { opacity: 1, scale: 1 } : {}}
-                  transition={{ duration: 0.4, delay: i * 0.07 }}
-                  className="flex items-center gap-2.5 px-5 py-3 rounded-sm border border-border bg-card/40 hover:border-ember/30 transition-colors duration-300"
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-ember flex-shrink-0" />
-                  <span className="text-sm font-semibold text-foreground/80">{cert.label}</span>
-                  <span className="text-xs text-muted-foreground/70">{cert.sub}</span>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
         </div>
       </section>
 
