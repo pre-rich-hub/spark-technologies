@@ -18,22 +18,22 @@ const advantages = [
   {
     icon: Shield,
     title: "Security-First Architecture",
-    description: "ISO 27001 certified practices embedded from day one. Security is never retrofitted — it is designed in.",
+    description: "Security is a design constraint, not a post-launch audit. We embed it from the first whiteboard session.",
   },
   {
     icon: Users,
     title: "Long-Term Partnership",
-    description: "We don't disappear post-launch. Our clients average 4+ years with us, building compounding value over time.",
+    description: "We don't disappear post-launch. Every engagement includes a 60-day support window and ongoing options.",
   },
   {
     icon: BarChart3,
-    title: "Performance Optimization",
-    description: "We obsess over metrics that matter — load times, throughput, error rates — because performance is a feature.",
+    title: "Performance by Default",
+    description: "We obsess over load times, Core Web Vitals, and error rates — because performance is a feature, not a phase.",
   },
   {
     icon: Globe,
-    title: "Enterprise Scalability",
-    description: "Built to handle millions of users from the start. Global CDN, multi-region failover, zero-downtime deploys.",
+    title: "Built to Scale",
+    description: "Architecture that grows with your business — from first launch to whatever comes next, without rewrites.",
   },
 ]
 

@@ -5,10 +5,10 @@ import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 const pillars = [
-  { value: "AI-Native",     label: "Engineering"        },
-  { value: "Production",    label: "Grade Systems"       },
-  { value: "Security",      label: "First Architecture"  },
-  { value: "End-to-End",    label: "Delivery"            },
+  { value: "Custom",     label: "Built Software"   },
+  { value: "Web",        label: "& Mobile"         },
+  { value: "Clean",      label: "Architecture"     },
+  { value: "End-to-End", label: "Delivery"         },
 ]
 
 export function HeroSection() {
@@ -61,8 +61,8 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.35 }}
           className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto mb-12 leading-relaxed text-pretty"
         >
-          A next-generation software studio crafting scalable systems, AI-powered
-          platforms, and enterprise applications for ambitious businesses worldwide.
+          A software studio crafting custom web and mobile products for ambitious
+          businesses — built to last, delivered without compromise.
         </motion.p>
 
         {/* CTAs */}

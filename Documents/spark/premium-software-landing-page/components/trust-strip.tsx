@@ -4,16 +4,16 @@ import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 
 const stack = [
-  "Next.js", "TypeScript", "React", "Go", "Python", "Rust",
-  "Kubernetes", "AWS", "GCP", "Terraform", "PostgreSQL",
-  "Kafka", "PyTorch", "GraphQL", "Redis",
+  "Next.js", "TypeScript", "React", "Node.js", "PostgreSQL",
+  "Tailwind CSS", "Flutter", "React Native", "Vercel",
+  "Stripe", "Figma", "Firebase",
 ]
 
 const domains = [
-  { label: "AI & Machine Learning",    desc: "Production LLM systems, ML pipelines, real-time inference"   },
-  { label: "Cloud Infrastructure",     desc: "Multi-cloud architecture, IaC, zero-downtime operations"      },
-  { label: "Distributed Systems",      desc: "Event-driven, microservices, high-throughput data platforms"   },
-  { label: "Security Engineering",     desc: "Zero-trust architecture, compliance-grade systems, audit trails" },
+  { label: "Custom Development", desc: "Full-stack software built to spec — web apps, SaaS platforms, internal tools" },
+  { label: "Web Development",    desc: "Fast, SEO-ready web apps with clean architecture and Core Web Vitals focus"   },
+  { label: "Mobile Development", desc: "Cross-platform iOS and Android apps from a single Flutter or React Native codebase" },
+  { label: "Product Design",     desc: "UX design, prototyping, and design systems that scale with your product"     },
 ]
 
 export function TrustStrip() {
