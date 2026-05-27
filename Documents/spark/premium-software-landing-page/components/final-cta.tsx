@@ -21,19 +21,6 @@ export function FinalCta() {
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-10 text-center">
 
-        {/* Eyebrow */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="mb-8"
-        >
-          <span className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-border text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
-            <span className="w-1.5 h-1.5 rounded-full bg-ember animate-pulse" />
-            Precision-engineered software
-          </span>
-        </motion.div>
-
         {/* Headline */}
         <motion.h2
           initial={{ opacity: 0, y: 28 }}
