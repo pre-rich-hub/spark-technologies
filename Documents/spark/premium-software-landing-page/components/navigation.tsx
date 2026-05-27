@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import {
   Menu, X, ChevronDown,
-  Layers, Brain, Building2, Cloud, Code2, Smartphone,
+  Code2, Globe, TabletSmartphone, Smartphone,
   ArrowUpRight,
 } from "lucide-react"
 import Link from "next/link"
@@ -40,12 +40,10 @@ const navLinks: NavLink[] = [
     dropdown: {
       columns: 2,
       items: [
-        { name: "Scalable Systems",       href: "/services/scalable-systems",      description: "Architecture designed to handle millions of users", icon: Layers },
-        { name: "AI-Powered Platforms",   href: "/services/ai-platforms",          description: "Machine learning and AI integrated into your workflow", icon: Brain, badge: "New" },
-        { name: "Enterprise Applications",href: "/services/enterprise-applications",description: "Security-first software for mission-critical ops", icon: Building2 },
-        { name: "Cloud Infrastructure",   href: "/services/cloud-infrastructure",  description: "Multi-cloud DevOps optimised for cost and uptime", icon: Cloud },
-        { name: "Custom Development",     href: "/services/custom-development",    description: "Bespoke full-stack software built to your spec", icon: Code2 },
-        { name: "Digital Products",       href: "/services/digital-products",      description: "Cross-platform UX-driven apps that delight users", icon: Smartphone },
+        { name: "Custom Development", href: "/services/custom-development",  description: "Bespoke full-stack software built to your spec",          icon: Code2 },
+        { name: "Web Development",    href: "/services/web-development",     description: "High-performance web apps and SaaS platforms",             icon: Globe },
+        { name: "Mobile Development", href: "/services/mobile-development",  description: "iOS and Android apps from a single codebase",              icon: TabletSmartphone },
+        { name: "Digital Products",   href: "/services/digital-products",    description: "End-to-end product design, engineering, and launch",       icon: Smartphone },
       ],
       cta: { label: "View all services", href: "/services" },
     },
