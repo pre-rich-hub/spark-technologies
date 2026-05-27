@@ -1,4 +1,4 @@
-import { LucideIcon, Code2, Globe, TabletSmartphone, Smartphone } from "lucide-react"
+import { LucideIcon, Code2, Globe, TabletSmartphone } from "lucide-react"
 
 export interface Service {
   slug: string
@@ -84,30 +84,6 @@ export const services: Service[] = [
       "OTA updates via CodePush or Shorebird — ship fixes without waiting on app review",
     ],
     relatedWork: ["iron-pulse", "hora-tours"],
-  },
-  {
-    slug: "digital-products",
-    icon: Smartphone,
-    title: "Digital Products",
-    tagline: "User-centric. Market-ready. Built to grow.",
-    description:
-      "End-to-end digital product development — from discovery and UX design through engineering and launch. Products that users love and that generate measurable business outcomes.",
-    process: [
-      { step: "01", title: "Product Discovery", description: "User research, competitive analysis, and a product brief that aligns business goals with user needs before a line of code is written." },
-      { step: "02", title: "UX Design & Prototyping", description: "Information architecture, wireframes, interactive prototypes, and user testing — validated before the engineering build begins." },
-      { step: "03", title: "Design System", description: "A component library that enforces visual consistency and accelerates feature development throughout the product lifecycle." },
-      { step: "04", title: "Engineering Build", description: "Full-stack development with weekly releases, automated testing, and performance budgets enforced from day one." },
-      { step: "05", title: "Launch & Growth", description: "App store optimisation, analytics instrumentation, A/B testing infrastructure, and a post-launch iteration roadmap." },
-    ],
-    technologies: ["Next.js", "React", "React Native", "TypeScript", "Tailwind CSS", "Figma", "Vercel", "Stripe"],
-    benefits: [
-      "Products designed around real user behaviour — not assumptions or internal opinions",
-      "Design system that scales across features without accruing visual debt",
-      "Performance-optimised from the ground up — Core Web Vitals, TTI, and CLS targets met",
-      "Accessible by default — WCAG 2.1 AA compliance built in, not bolted on",
-      "Analytics and experimentation infrastructure to learn and iterate from day one",
-    ],
-    relatedWork: ["shemzu-store", "aurum-restaurant"],
   },
 ]
 

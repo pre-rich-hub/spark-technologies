@@ -2,50 +2,29 @@
 
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
-import { Layers, Brain, Building2, Cloud, Code2, Smartphone, ArrowUpRight } from "lucide-react"
+import { Code2, Globe, TabletSmartphone, ArrowUpRight } from "lucide-react"
 
 const services = [
-  {
-    icon: Layers,
-    title: "Scalable Systems",
-    description:
-      "Architecture designed to grow with your business. Systems that handle millions of users while maintaining peak performance.",
-    features: ["Microservices", "Event-Driven", "Auto-Scaling"],
-  },
-  {
-    icon: Brain,
-    title: "AI-Powered Platforms",
-    description:
-      "Intelligent solutions that transform raw data into competitive advantage. ML and AI integrated seamlessly into your workflow.",
-    features: ["Machine Learning", "NLP", "Predictive Analytics"],
-  },
-  {
-    icon: Building2,
-    title: "Enterprise Applications",
-    description:
-      "Robust, security-first applications tailored for enterprise operations — from ERP to mission-critical custom systems.",
-    features: ["Security-First", "Compliance Ready", "Integration APIs"],
-  },
-  {
-    icon: Cloud,
-    title: "Cloud Infrastructure",
-    description:
-      "Modern cloud architecture optimized for performance, reliability, and cost-efficiency across any provider.",
-    features: ["Multi-Cloud", "DevOps", "Infrastructure as Code"],
-  },
   {
     icon: Code2,
     title: "Custom Development",
     description:
-      "Bespoke software crafted to your exact specifications. From concept to deployment — we bring your vision to life.",
-    features: ["Full-Stack", "API Development", "Legacy Modernization"],
+      "Bespoke full-stack software built to your exact specifications — from greenfield products to legacy modernisation. No templates, no shortcuts.",
+    features: ["Full-Stack", "API Development", "Clean Architecture"],
   },
   {
-    icon: Smartphone,
-    title: "Digital Products",
+    icon: Globe,
+    title: "Web Development",
     description:
-      "User-centric digital products that delight customers and drive growth. Web, mobile, and everything beyond.",
-    features: ["UX Design", "Cross-Platform", "Performance Optimized"],
+      "High-performance web applications and SaaS platforms built for speed, SEO, and scale — from architecture through to deployment.",
+    features: ["Next.js", "TypeScript", "Core Web Vitals"],
+  },
+  {
+    icon: TabletSmartphone,
+    title: "Mobile Development",
+    description:
+      "Cross-platform iOS and Android apps built with Flutter and React Native — native performance without the cost of two separate codebases.",
+    features: ["Flutter", "React Native", "App Store Launch"],
   },
 ]
 

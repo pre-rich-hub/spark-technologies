@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import {
   Menu, X, ChevronDown,
-  Code2, Globe, TabletSmartphone, Smartphone,
+  Code2, Globe, TabletSmartphone,
   ArrowUpRight,
 } from "lucide-react"
 import Link from "next/link"
@@ -40,10 +40,9 @@ const navLinks: NavLink[] = [
     dropdown: {
       columns: 2,
       items: [
-        { name: "Custom Development", href: "/services/custom-development",  description: "Bespoke full-stack software built to your spec",          icon: Code2 },
-        { name: "Web Development",    href: "/services/web-development",     description: "High-performance web apps and SaaS platforms",             icon: Globe },
-        { name: "Mobile Development", href: "/services/mobile-development",  description: "iOS and Android apps from a single codebase",              icon: TabletSmartphone },
-        { name: "Digital Products",   href: "/services/digital-products",    description: "End-to-end product design, engineering, and launch",       icon: Smartphone },
+        { name: "Custom Development", href: "/services/custom-development", description: "Bespoke full-stack software built to your spec", icon: Code2 },
+        { name: "Web Development",    href: "/services/web-development",    description: "High-performance web apps and SaaS platforms",   icon: Globe },
+        { name: "Mobile Development", href: "/services/mobile-development", description: "iOS and Android apps from a single codebase",    icon: TabletSmartphone },
       ],
       cta: { label: "View all services", href: "/services" },
     },
