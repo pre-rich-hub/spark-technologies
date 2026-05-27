@@ -6,22 +6,14 @@ import { SparkMark } from "@/components/logo"
 
 const footerLinks = {
   Services: [
-    { name: "AI Platforms",          href: "/services/ai-platforms"            },
-    { name: "Enterprise Apps",       href: "/services/enterprise-applications"  },
-    { name: "Cloud Infrastructure",  href: "/services/cloud-infrastructure"    },
-    { name: "Custom Development",    href: "/services/custom-development"      },
-    { name: "Web Development",        href: "/services/web-development"         },
-    { name: "Mobile Development",    href: "/services/mobile-development"      },
+    { name: "Custom Development", href: "/services/custom-development" },
+    { name: "Web Development",    href: "/services/web-development"    },
+    { name: "Mobile Development", href: "/services/mobile-development" },
   ],
   Company: [
     { name: "About",   href: "/about"   },
     { name: "Work",    href: "/work"    },
     { name: "Contact", href: "/contact" },
-  ],
-  Legal: [
-    { name: "Privacy Policy",   href: "#" },
-    { name: "Terms of Service", href: "#" },
-    { name: "Cookie Policy",    href: "#" },
   ],
 }
 
@@ -35,7 +27,7 @@ export function Footer() {
   return (
     <footer className="relative border-t border-border">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
 
           {/* Brand */}
           <div className="lg:col-span-2">
@@ -46,8 +38,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs mb-7 leading-relaxed">
-              A next-generation software studio building scalable systems, AI-powered platforms,
-              and enterprise applications for ambitious businesses worldwide.
+              A software studio building custom web and mobile products for ambitious businesses.
             </p>
             <div className="flex gap-3">
               {socials.map((s) => (
@@ -91,7 +82,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Spark Technologies. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground/60 uppercase tracking-[0.12em]">
-            Crafted with precision &mdash; San Francisco
+            Built with precision.
           </p>
         </div>
       </div>
