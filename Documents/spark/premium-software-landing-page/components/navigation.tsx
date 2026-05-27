@@ -6,7 +6,7 @@ import {
   Menu, X, ChevronDown,
   Layers, Brain, Building2, Cloud, Code2, Smartphone,
   FolderOpen, BarChart3, Globe, Grid3x3,
-  BookOpen, Users, Heart, Newspaper,
+  BookOpen, Newspaper,
   ArrowUpRight,
 } from "lucide-react"
 import Link from "next/link"
@@ -69,10 +69,8 @@ const navLinks: NavLink[] = [
     href: "/about",
     dropdown: {
       items: [
-        { name: "Our Story",     href: "/about",          description: "How Spark was founded and our mission", icon: BookOpen },
-        { name: "The Team",      href: "/about/team",     description: "Meet the engineers and designers",      icon: Users },
-        { name: "Culture",       href: "/about/culture",  description: "What drives us every day",              icon: Heart },
-        { name: "Press & Media", href: "/about/press",    description: "Coverage and announcements",            icon: Newspaper },
+        { name: "Our Story",     href: "/about",        description: "How Spark was founded and our mission", icon: BookOpen },
+        { name: "Press & Media", href: "/about/press",  description: "Coverage and announcements",            icon: Newspaper },
       ],
     },
   },
