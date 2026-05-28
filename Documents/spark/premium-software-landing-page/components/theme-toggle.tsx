@@ -30,7 +30,7 @@ export function ThemeToggle() {
         overflow-hidden flex-shrink-0
         transition-colors duration-300
         ${isDark
-          ? "border-[oklch(0.30_0.01_260)] text-[oklch(0.55_0.01_90)] hover:border-ember/50 hover:text-ember"
+          ? "border-[oklch(0.30_0.01_260)] text-[oklch(0.72_0.01_90)] hover:border-ember/50 hover:text-ember"
           : "border-border text-muted-foreground hover:border-ember/50 hover:text-ember"
         }
       `}

@@ -33,7 +33,7 @@ export function TrustStrip() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center text-[10px] uppercase tracking-[0.22em] text-muted-foreground/45 mb-10"
+          className="text-center text-[10px] uppercase tracking-[0.22em] text-muted-foreground/70 mb-10"
         >
           Core Engineering Stack
         </motion.p>
@@ -51,7 +51,7 @@ export function TrustStrip() {
               initial={{ opacity: 0, scale: 0.92 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.35, delay: 0.1 + i * 0.04 }}
-              className="px-3.5 py-1.5 text-xs border border-border/70 rounded-sm text-muted-foreground/70 hover:border-ember/30 hover:text-ember/80 transition-colors duration-300 cursor-default"
+              className="px-3.5 py-1.5 text-xs border border-border/70 rounded-sm text-muted-foreground/90 hover:border-ember/30 hover:text-ember/80 transition-colors duration-300 cursor-default"
             >
               {tech}
             </motion.span>
@@ -78,7 +78,7 @@ export function TrustStrip() {
             >
               <div className="w-1 h-1 rounded-full bg-ember mb-3" />
               <h3 className="text-xs font-semibold text-foreground/80 mb-1.5 tracking-tight">{domain.label}</h3>
-              <p className="text-[11px] text-muted-foreground/60 leading-relaxed">{domain.desc}</p>
+              <p className="text-[11px] text-muted-foreground/85 leading-relaxed">{domain.desc}</p>
             </motion.div>
           ))}
         </div>

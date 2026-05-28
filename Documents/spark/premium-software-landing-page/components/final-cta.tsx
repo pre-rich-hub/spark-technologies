@@ -70,7 +70,7 @@ export function FinalCta() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.65 }}
-          className="mt-14 text-[11px] uppercase tracking-[0.18em] text-muted-foreground/50"
+          className="mt-14 text-[11px] uppercase tracking-[0.18em] text-muted-foreground/75"
         >
           Every system engineered to production standard &nbsp;&middot;&nbsp; No exceptions
         </motion.p>

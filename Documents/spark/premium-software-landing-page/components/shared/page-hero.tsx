@@ -61,7 +61,7 @@ export function PageHero({ eyebrow, title, highlighted, titleAfter, description,
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.28 }}
-          className={`text-base leading-relaxed max-w-2xl ${dark ? "text-[oklch(0.55_0.01_90)]" : "text-muted-foreground"}`}
+          className={`text-base leading-relaxed max-w-2xl ${dark ? "text-[oklch(0.72_0.01_90)]" : "text-muted-foreground"}`}
         >
           {description}
         </motion.p>

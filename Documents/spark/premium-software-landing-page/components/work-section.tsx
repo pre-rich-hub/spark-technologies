@@ -269,10 +269,10 @@ export function WorkSection() {
         transition={{ duration: 0.8, delay: 0.8 }}
         className="mx-auto max-w-7xl px-6 lg:px-10 mt-16 flex items-center justify-between"
       >
-        <p className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground/40">
+        <p className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground/65">
           8 live projects &mdash; 2024
         </p>
-        <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.18em] text-muted-foreground/40">
+        <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.18em] text-muted-foreground/65">
           <span className="w-1.5 h-1.5 rounded-full bg-ember inline-block" />
           Global Delivery
         </div>

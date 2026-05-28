@@ -57,7 +57,7 @@ export function Footer() {
           {/* Link columns */}
           {(Object.entries(footerLinks) as [string, { name: string; href: string }[]][]).map(([group, links]) => (
             <div key={group}>
-              <h3 className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground/60 mb-5">
+              <h3 className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground/80 mb-5">
                 {group}
               </h3>
               <ul className="space-y-3.5">
@@ -78,10 +78,10 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-muted-foreground/60 uppercase tracking-[0.12em]">
+          <p className="text-xs text-muted-foreground/80 uppercase tracking-[0.12em]">
             &copy; {new Date().getFullYear()} Spark Technologies. All rights reserved.
           </p>
-          <p className="text-xs text-muted-foreground/60 uppercase tracking-[0.12em]">
+          <p className="text-xs text-muted-foreground/80 uppercase tracking-[0.12em]">
             Built with precision.
           </p>
         </div>
