@@ -4,9 +4,16 @@ import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 
 const stack = [
-  "Next.js", "TypeScript", "React", "Node.js", "PostgreSQL",
-  "Tailwind CSS", "Flutter", "React Native", "Vercel",
-  "Stripe", "Figma", "Firebase",
+  // Frontend
+  "React", "Next.js", "TypeScript", "Vue", "Tailwind CSS", "Framer Motion",
+  // Backend
+  "Node.js", "Python", "Go", "Django", "FastAPI", "NestJS",
+  // Mobile
+  "React Native", "Flutter",
+  // Database
+  "PostgreSQL", "MongoDB", "Redis", "Supabase", "MySQL",
+  // Infrastructure & Design
+  "Vercel", "Docker", "AWS", "Figma",
 ]
 
 const domains = [
