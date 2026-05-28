@@ -26,7 +26,7 @@ export const caseStudies: CaseStudy[] = [
     overview:  "Hamba Ethiopia Tours is a licensed tour operator offering guided expeditions across Ethiopia's most extraordinary landscapes and cultures — from the rock-hewn churches of Lalibela to the terrain of the Danakil Depression. Expert local guides and carefully researched itineraries distinguish them in a competitive market.",
     challenge: "Hamba's international clientele — researchers, documentarians, cultural travelers — were arriving at a website that didn't reflect the quality of the experience on offer. The digital presence wasn't surfacing in global search for Ethiopian travel intent, and the existing site lacked multilingual support for their key markets.",
     solution:  "We designed and built a Next.js platform with multilingual support across English, Spanish, and French, Cloudinary-powered cinematic image galleries, and a structured itinerary architecture for multiple expedition types. An SEO strategy anchored to specific destination queries improved organic visibility. The result gives the brand a digital presence that matches the quality of the experience.",
-    technologies: ["Next.js", "Cloudinary", "Tailwind CSS", "i18n", "Vercel", "SEO Architecture", "Structured Data"],
+    technologies: ["Next.js", "Django", "PostgreSQL", "Cloudinary", "Tailwind CSS", "i18n", "Vercel", "SEO Architecture", "Structured Data"],
     timeline:  "6 weeks",
     tags: ["Tourism", "Travel", "Multilingual", "SEO"],
   },
