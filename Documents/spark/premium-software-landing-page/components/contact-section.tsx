@@ -61,12 +61,13 @@ export function ContactSection() {
             <div className="grid sm:grid-cols-2 gap-5">
               <div>
                 <label htmlFor="name" className="block text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">
-                  Your Name
+                  Your Name <span className="text-ember">*</span>
                 </label>
                 <Input
                   id="name"
                   type="text"
                   placeholder="John Doe"
+                  required
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   className={inputClass}
@@ -74,12 +75,13 @@ export function ContactSection() {
               </div>
               <div>
                 <label htmlFor="email" className="block text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">
-                  Email Address
+                  Email Address <span className="text-ember">*</span>
                 </label>
                 <Input
                   id="email"
                   type="email"
                   placeholder="john@company.com"
+                  required
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
                   className={inputClass}
