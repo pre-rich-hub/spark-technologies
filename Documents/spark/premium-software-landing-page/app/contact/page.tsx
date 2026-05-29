@@ -104,7 +104,7 @@ export default function ContactPage() {
                 <h3 className="text-xs uppercase tracking-[0.16em] text-muted-foreground mb-7">Direct Contact</h3>
                 <div className="space-y-6">
                   {[
-                    { icon: Mail,   label: "Email",    value: "hello@spark.dev",          href: "mailto:hello@spark.dev"  },
+                    { icon: Mail,   label: "Email",    value: "hello@melbatech.com",       href: "mailto:hello@melbatech.com" },
                     { icon: Phone,  label: "Phone",    value: "+1 (415) 555-0147",         href: "tel:+14155550147"        },
                     { icon: MapPin, label: "HQ",       value: "San Francisco, California", href: null                     },
                   ].map(({ icon: Icon, label, value, href }) => (

@@ -10,7 +10,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: 'Spark | Next-Generation Software Development',
+  title: 'Melba Technology | Smart Digital Solutions',
   description: 'A premium software company specializing in scalable systems, AI-powered platforms, enterprise applications, cloud infrastructure, and custom digital product development.',
   icons: {
     icon: [
@@ -30,7 +30,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           attribute="class"
           defaultTheme="system"
           enableSystem
-          storageKey="spark-theme"
+          storageKey="melba-theme"
         >
           <Navigation />
           {children}

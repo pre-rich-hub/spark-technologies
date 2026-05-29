@@ -6,6 +6,7 @@
 
 :root {
   color-scheme: light;
+  --logo-filter: brightness(0);
   /* ── Core brand: white + ember ── */
   --background:           oklch(1 0 0);            /* pure white */
   --foreground:           oklch(0.10 0.008 260);   /* near-black */
@@ -48,6 +49,7 @@
 
 .dark {
   color-scheme: dark;
+  --logo-filter: brightness(0) invert(1);
   --section-alt: oklch(0.10 0.008 260);
   --background:           oklch(0.07 0.008 260);
   --foreground:           oklch(0.97 0.005 90);

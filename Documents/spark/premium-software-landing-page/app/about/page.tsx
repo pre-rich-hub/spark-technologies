@@ -82,10 +82,10 @@ export default function AboutPage() {
   return (
     <main>
       <PageHero
-        eyebrow="About Spark"
+        eyebrow="About Melba Technology"
         title="Software Engineered"
         highlighted="Without Compromise."
-        description="Spark is a software engineering studio. We build AI-native platforms, enterprise systems, and scalable infrastructure for companies that refuse to compromise on the quality of their software."
+        description="Melba Technology is a software engineering studio. We build AI-native platforms, enterprise systems, and scalable infrastructure for companies that refuse to compromise on the quality of their software."
       />
 
       {/* Mission */}

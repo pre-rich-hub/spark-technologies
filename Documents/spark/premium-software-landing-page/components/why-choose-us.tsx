@@ -57,7 +57,7 @@ export function WhyChooseUs() {
           className="mb-20"
         >
           <p className="text-[11px] uppercase tracking-[0.22em] text-ember font-medium mb-5">
-            Why Spark
+            Why Melba
           </p>
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
             <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[0.92] text-balance">

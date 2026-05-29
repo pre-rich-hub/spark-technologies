@@ -6,7 +6,7 @@ import { useRef } from "react"
 const testimonials = [
   {
     quote:
-      "Spark transformed our entire digital infrastructure. Their expertise in cloud architecture saved us millions in operational costs while significantly improving performance.",
+      "Melba Technology transformed our entire digital infrastructure. Their expertise in cloud architecture saved us millions in operational costs while significantly improving performance.",
     author: "Sarah Chen",
     role:   "CTO",
     company:"TechCorp Global",
@@ -14,7 +14,7 @@ const testimonials = [
   },
   {
     quote:
-      "Working with Spark felt like having an extension of our own team. They understood our vision immediately and delivered beyond our expectations, on time and within budget.",
+      "Working with Melba Technology felt like having an extension of our own team. They understood our vision immediately and delivered beyond our expectations, on time and within budget.",
     author: "Michael Torres",
     role:   "VP of Engineering",
     company:"FinanceHub",

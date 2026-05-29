@@ -10,7 +10,7 @@ import {
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { SparkMark } from "@/components/logo"
+import { MelbaMark } from "@/components/logo"
 import type { LucideIcon } from "lucide-react"
 
 /* ─── Types ────────────────────────────────────────────────────────────── */
@@ -259,11 +259,8 @@ export function Navigation() {
           <div className="flex items-center justify-between">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group">
-              <SparkMark />
-              <span className="text-lg font-semibold tracking-tight text-foreground group-hover:text-ember transition-colors duration-300">
-                Spark
-              </span>
+            <Link href="/" className="flex items-center group">
+              <MelbaMark />
             </Link>
 
             {/* Desktop nav */}

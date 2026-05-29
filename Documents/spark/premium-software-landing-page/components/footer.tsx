@@ -2,7 +2,7 @@
 
 import { Github, Linkedin, Twitter } from "lucide-react"
 import Link from "next/link"
-import { SparkMark } from "@/components/logo"
+import { MelbaMark } from "@/components/logo"
 
 const footerLinks = {
   Services: [
@@ -32,10 +32,15 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-flex items-center gap-3 mb-6 group">
-              <SparkMark />
-              <span className="text-lg font-semibold tracking-tight group-hover:text-ember transition-colors duration-300">
-                Spark
-              </span>
+              <MelbaMark size={40} />
+              <div className="leading-none">
+                <div className="text-2xl font-bold tracking-tight group-hover:text-ember transition-colors duration-300">
+                  Melba
+                </div>
+                <div className="text-sm font-normal tracking-wide text-muted-foreground group-hover:text-ember/70 transition-colors duration-300">
+                  Technology
+                </div>
+              </div>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs mb-7 leading-relaxed">
               A software studio building custom web and mobile products for ambitious businesses.
@@ -79,7 +84,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground/80 uppercase tracking-[0.12em]">
-            &copy; {new Date().getFullYear()} Spark Technologies. All rights reserved.
+            &copy; {new Date().getFullYear()} Melba Technology. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground/80 uppercase tracking-[0.12em]">
             Built with precision.

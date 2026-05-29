@@ -23,30 +23,30 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
   return (
     <main>
       {/* Hero */}
-      <section className="relative pt-40 pb-20 overflow-hidden" style={{ background: "oklch(0.07 0.008 260)" }}>
+      <section className="relative pt-40 pb-20 overflow-hidden bg-background">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/3 left-[-10%] w-[600px] h-[600px] rounded-full bg-ember/10 blur-[160px]" />
+          <div className="absolute top-1/3 left-[-10%] w-[600px] h-[600px] rounded-full bg-ember/8 blur-[160px]" />
         </div>
         <div
-          className="absolute inset-0 opacity-[0.025] pointer-events-none"
+          className="absolute inset-0 opacity-[0.4] pointer-events-none"
           style={{
-            backgroundImage: "linear-gradient(oklch(0.97 0.005 90 / 0.15) 1px, transparent 1px), linear-gradient(90deg, oklch(0.97 0.005 90 / 0.15) 1px, transparent 1px)",
+            backgroundImage: "linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px)",
             backgroundSize: "64px 64px",
           }}
         />
         <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-10">
-          <Link href="/work" className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-[oklch(0.55_0.01_90)] hover:text-ember transition-colors mb-8">
+          <Link href="/work" className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-muted-foreground hover:text-ember transition-colors mb-8">
             ← All Work
           </Link>
           <div className="flex flex-wrap gap-3 mb-8">
             <span className="px-3 py-1 text-[10px] uppercase tracking-[0.16em] border border-ember/30 text-ember rounded-sm">{caseStudy.industry}</span>
-            <span className="px-3 py-1 text-[10px] uppercase tracking-[0.16em] border border-[oklch(0.30_0.01_260)] text-[oklch(0.55_0.01_90)] rounded-sm">{caseStudy.category}</span>
+            <span className="px-3 py-1 text-[10px] uppercase tracking-[0.16em] border border-border text-muted-foreground rounded-sm">{caseStudy.category}</span>
           </div>
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-            className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-[-0.03em] leading-[0.90] mb-6 text-[oklch(0.97_0.005_90)]"
+            className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-[-0.03em] leading-[0.90] mb-6 text-foreground"
           >
             {caseStudy.title}
           </motion.h1>
@@ -54,7 +54,7 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-base text-[oklch(0.60_0.01_90)] leading-relaxed max-w-2xl mb-8"
+            className="text-base text-muted-foreground leading-relaxed max-w-2xl mb-8"
           >
             {caseStudy.tagline}
           </motion.p>
