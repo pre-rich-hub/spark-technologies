@@ -7,47 +7,47 @@ import { PageCta } from "@/components/shared/page-cta"
 
 const values = [
   {
-    title:       "Relentless Quality",
+    title: "Relentless Quality",
     description: "We would rather miss a deadline than ship something we are not proud of. Every codebase we deliver is one we will stake our reputation on.",
   },
   {
-    title:       "Engineering Integrity",
+    title: "Engineering Integrity",
     description: "We tell clients what they need to hear, not what they want to hear. Honest technical assessment — even when it complicates the conversation.",
   },
   {
-    title:       "Transparent Process",
+    title: "Transparent Process",
     description: "No black box. Weekly demos, clear milestones, open backlog. You always know the state of your project, your budget, and your timeline.",
   },
   {
-    title:       "Long-Term Thinking",
+    title: "Long-Term Thinking",
     description: "Every architecture decision is made for the system's ten-year life, not the six-month engagement. We build for where your business is going.",
   },
 ]
 
 const principles = [
   {
-    n:    "01",
-    title:"Systems over features",
+    n: "01",
+    title: "Systems over features",
     desc: "We spend more time on the architecture than the features — because the architecture is what makes features possible at scale. Features are temporary. Structure is permanent.",
   },
   {
-    n:    "02",
-    title:"AI-native by default",
+    n: "02",
+    title: "AI-native by default",
     desc: "We design for AI from the first whiteboard session. Not retrofitted. Not bolted on. Integrated into the data model, the API contracts, and the infrastructure from the start.",
   },
   {
-    n:    "03",
-    title:"Security as structure",
+    n: "03",
+    title: "Security as structure",
     desc: "Security is a design constraint, not a post-launch audit. We make it a first-class concern from the initial architecture review through to every deployment.",
   },
   {
-    n:    "04",
-    title:"Code that teaches",
+    n: "04",
+    title: "Code that teaches",
     desc: "Every codebase is documented and structured as if the next engineer is better than us. Because eventually, they will be — and the system should be ready for them.",
   },
   {
-    n:    "05",
-    title:"Performance is product",
+    n: "05",
+    title: "Performance is product",
     desc: "Load time, throughput, and error rates are product decisions. We measure them like revenue, because the engineering quality users feel directly determines what they do next.",
   },
 ]
@@ -55,29 +55,29 @@ const principles = [
 const delivery = [
   {
     title: "Direct accountability",
-    desc:  "You work directly with the engineers who scoped your project. There are no account managers or delivery layers between you and the people writing the code.",
+    desc: "You work directly with the engineers who scoped your project. There are no account managers or delivery layers between you and the people writing the code.",
   },
   {
     title: "Named technical lead",
-    desc:  "Every engagement has a single named technical lead who owns architectural decisions, attends every client touchpoint, and is reachable without scheduling a meeting.",
+    desc: "Every engagement has a single named technical lead who owns architectural decisions, attends every client touchpoint, and is reachable without scheduling a meeting.",
   },
   {
     title: "No handoff model",
-    desc:  "We don't sell and hand off. The team that designs your system builds it. The team that builds it deploys it. Continuity is not optional — it is how quality is maintained.",
+    desc: "We don't sell and hand off. The team that designs your system builds it. The team that builds it deploys it. Continuity is not optional — it is how quality is maintained.",
   },
 ]
 
 
 export default function AboutPage() {
-  const missionRef  = useRef(null)
+  const missionRef = useRef(null)
   const principlesRef = useRef(null)
-  const valuesRef   = useRef(null)
+  const valuesRef = useRef(null)
   const deliveryRef = useRef(null)
 
-  const missionInView    = useInView(missionRef,    { once: true, margin: "-80px" })
+  const missionInView = useInView(missionRef, { once: true, margin: "-80px" })
   const principlesInView = useInView(principlesRef, { once: true, margin: "-80px" })
-  const valuesInView     = useInView(valuesRef,     { once: true, margin: "-80px" })
-  const deliveryInView   = useInView(deliveryRef,   { once: true, margin: "-80px" })
+  const valuesInView = useInView(valuesRef, { once: true, margin: "-80px" })
+  const deliveryInView = useInView(deliveryRef, { once: true, margin: "-80px" })
 
   return (
     <main>
@@ -85,44 +85,71 @@ export default function AboutPage() {
         eyebrow="About Melba Technology"
         title="Software Engineered"
         highlighted="Without Compromise."
-        description="Melba Technology is a software engineering studio. We build AI-native platforms, enterprise systems, and scalable infrastructure for companies that refuse to compromise on the quality of their software."
+        description="Melba Technology is inspired by the timeless wisdom of the Oromo Gadaa System — one of Africa’s oldest indigenous systems of leadership, knowledge, unity, and generational progress."
       />
 
-      {/* Mission */}
+      {/* Heritage & Mission */}
       <section
-        className="py-24 border-b border-border"
+        className="py-32 border-b border-border relative overflow-hidden"
         style={{ background: "var(--section-alt)" }}
         ref={missionRef}
       >
-        <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="absolute inset-0 pointer-events-none opacity-[0.03]"
+          style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")` }}
+        />
+
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-20 items-start">
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={missionInView ? { opacity: 1, x: 0 } : {}}
+              initial={{ opacity: 0, y: 20 }}
+              animate={missionInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8 }}
             >
-              <p className="text-[11px] uppercase tracking-[0.22em] text-ember font-medium mb-5">Our Position</p>
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight leading-[1.08] text-balance mb-6">
-                Most software gets built to a deadline.<br />
-                <span className="gradient-text">Ours gets built to last.</span>
+              <p className="text-[11px] uppercase tracking-[0.22em] text-ember font-medium mb-6">Our Legacy</p>
+              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight leading-[1.05] text-balance mb-8">
+                Bridging Heritage<br />
+                <span className="gradient-text">With Innovation.</span>
               </h2>
+              <div className="space-y-6 text-base text-muted-foreground leading-relaxed">
+                <p>
+                  For centuries, the Gadaa System shaped communities through responsibility, innovation, collaboration, and visionary thinking. At Melba Technology, we carry that same spirit into the digital age.
+                </p>
+                <div className="pl-6 border-l-2 border-ember/30">
+                  <p className="italic text-foreground/80 font-medium">
+                    "Rooted in heritage. Built for the future."
+                  </p>
+                </div>
+              </div>
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={missionInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.12 }}
-              className="space-y-5"
+              initial={{ opacity: 0, y: 20 }}
+              animate={missionInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.15 }}
+              className="space-y-8"
             >
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Every architecture decision we make is for the system&apos;s ten-year life, not the six-month engagement. Every code review is done as if the system will need to run flawlessly at ten times its current scale. Because eventually, it will.
-              </p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                We work with ambitious companies — the ones building systems that matter, that carry real load, that fail in ways that cost real money. They come to us because they need engineering that matches the seriousness of what they are building.
-              </p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                We are selective by design. Every engagement gets the full force of our attention, and we do not dilute that across more clients than we can serve at that standard.
-              </p>
+              <div className="space-y-6">
+                <p className="text-lg text-foreground/90 leading-relaxed font-medium">
+                  We believe technology is more than code and design — it is a tool that connects people, empowers businesses, and builds the future.
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Rooted in Ethiopian identity and driven by global standards, we create modern digital solutions that help businesses grow, compete, and thrive in a rapidly evolving world.
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Our mission is to combine the strength of African wisdom with the limitless possibilities of technology. From Ethiopia to the world, Melba Technology exists to build impactful digital experiences that inspire progress, create opportunity, and leave a lasting legacy for the next generation.
+                </p>
+              </div>
+
+              <div className="pt-8 grid grid-cols-2 gap-8 border-t border-border">
+                <div>
+                  <p className="text-[10px] uppercase tracking-wider text-ember font-bold mb-2">Philosophy</p>
+                  <p className="text-sm text-foreground/70">Responsibility & Visionary Thinking</p>
+                </div>
+                <div>
+                  <p className="text-[10px] uppercase tracking-wider text-ember font-bold mb-2">Goal</p>
+                  <p className="text-sm text-foreground/70">Global Standards, Local Roots</p>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
