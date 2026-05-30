@@ -4,45 +4,22 @@ import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 import { ArrowUpRight, ExternalLink } from "lucide-react"
 import Link from "next/link"
+import { caseStudies } from "@/lib/data/case-studies"
 
-const featured = [
-  {
-    slug:    "hamba-tours",
-    title:   "Hamba Ethiopia Tours",
-    category: "Tourism Platform",
-    industry: "Travel & Hospitality",
-    liveUrl: "https://www.hambatours.com/",
-    domain:  "hambatours.com",
-    impact:  "A multilingual expedition platform for an Ethiopian tour operator — built for international travelers seeking authentic cultural experiences.",
-    tech:    ["Next.js", "Cloudinary", "i18n", "Vercel"],
-    thumbUrl: "/thumbnails/hamba-s.jpg",
-  },
-  {
-    slug:    "maison-real-estate",
-    title:   "Maison",
-    category: "Luxury Real Estate Platform",
-    industry: "Real Estate & PropTech",
-    liveUrl: "https://premium-real-estate-platform.vercel.app/",
-    domain:  "Maison Real Estate",
-    impact:  "A cinematic luxury property platform with private advisory flows and curated search — built for the world's most discerning buyers.",
-    tech:    ["Next.js", "PostgreSQL", "Mapbox", "Stripe"],
-    thumbUrl: "/thumbnails/realstate-s.jpg",
-  },
-  {
-    slug:    "prestige-car-rental",
-    title:   "PRESTIGE",
-    category: "Luxury Automotive Platform",
-    industry: "Automotive & Luxury",
-    liveUrl: "https://luxury-car-rental-mu.vercel.app/",
-    domain:  "PRESTIGE Car Rental",
-    impact:  "A concierge-grade booking platform for an exotic car rental service — fleet showcases, membership tiers, and real-time availability.",
-    tech:    ["Next.js", "Stripe", "Twilio", "Real-time API"],
-    thumbUrl: "/thumbnails/carental-s.jpg",
-  },
-]
+const featured = caseStudies.slice(0, 3).map(study => ({
+  slug: study.slug,
+  title: study.title,
+  category: study.category,
+  industry: study.industry,
+  liveUrl: study.liveUrl,
+  domain: new URL(study.liveUrl).hostname.replace('www.', ''),
+  impact: study.tagline,
+  tech: study.technologies,
+  thumbUrl: study.thumbnail,
+}))
 
 export function FeaturedWork() {
-  const ref      = useRef(null)
+  const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-80px" })
 
   return (
